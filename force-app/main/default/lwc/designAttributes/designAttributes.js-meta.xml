@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__HomePage">
+            <property name="firstName" type="String" label="Enter Your Name" default="Rohit" />
+            <property name="textColor" type="String" label="Enter Your Color Name" default="red" />
+            <property name="backgroundTextColor" type="String" label="Enter Your Text Color Name for Background" default="Yellow" />
+            <property name="imgUrl" type="String" label="Enter Your URL" default="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzC2JyZDZ_RaWf0qp11K0lcvB6b6kYNMoqtZAQ9hiPZ4cTIOB" />
+            <property name="imgHeight" type="String" label="Enter Your Img Height" default="50" />
+            <property name="imgWidth" type="String" label="Enter Your Img Width" default="50" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

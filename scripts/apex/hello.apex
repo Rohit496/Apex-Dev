@@ -1,20 +1,22 @@
-Map<String, List<String>> mainMap = new Map<String, List<String>>();
-mainMap.put('Apex', new List<String>{ 'Development', 'Console' });
-mainMap.put('Lightning', new List<String>{ 'Aura', 'Lwc' });
+List<String> days = new List<String>{
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday'
+};
 
-System.debug('mainMap: ' + mainMap);
-for (String key : mainMap.keySet()) {
-  System.debug('Key: ' + key);
-  for (String value : mainMap.get(key)) {
-    System.debug('Value: ' + value);
-  }
+// display list using for each loop in apex
+for (String day : days) {
+  System.debug(day);
 }
-// another program
-String greeting;
-Integer hour = 22;
-greeting = (hour < 12)
-  ? 'Good Morning'
-  : (hour < 18)
-      ? 'Good Afternoon'
-      : (hour < 22) ? 'Good Evening' : 'Good Night';
-System.debug(greeting);
+
+for (Integer i = 0; i < days.size(); i++) {
+  if (days[i] == 'Tuesday') {
+    System.debug('Today is ' + days[i] + ' you can not eat the chicken');
+    continue;
+  }
+  System.debug('You can eat chicken on ' + days[i]);
+}
