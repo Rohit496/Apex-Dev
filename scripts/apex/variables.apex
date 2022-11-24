@@ -1,7 +1,2 @@
-SObject s1 = new Account(Name = 'Test', Rating = 'Hot', Industry = 'Tech'); //create a new account
-System.debug('s1: ' + s1);
-
-Account a1 = (Account) s1;
-System.debug('a1: ' + a1);
-System.debug('Get sObjectType: ' + a1.getsObjectType());
-System.debug('Get sObjectType name: ' + a1.getsObjectType().getname());
+Id id_18_digits = '0015g00000wmXHxAAM';
+System.debug('15_digit_id:::::::' + id_18_digits.to15());
