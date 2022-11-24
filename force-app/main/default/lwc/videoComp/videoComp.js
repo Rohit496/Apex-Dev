@@ -45,7 +45,7 @@ export default class VideoComp extends LightningElement {
       console.log("🚀 ~ @wire ~   data.records", data.results);
       this.allData = data.results;
     } else if (error) {
-      console.log("🚀 ~ @wire ~ error", error);
+      console.error("🚀 ~ @wire ~ error", error);
     }
   }
 }
