@@ -1,0 +1,19 @@
+<!-- sldsValidatorIgnore -->
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="image-resizer">
+        <div class="image-resizer__container">
+            <img class="image-resizer__image" src="https://picsum.photos/200/300" alt={imageAlt} />
+        </div>
+        <div class="image-resizer__tools">
+            <lightning-button-group>
+                <lightning-button-icon icon-name="utility:zoomin" alternative-text="Zoom in" variant="bare"
+                    onclick={handleZoomIn}></lightning-button-icon>
+                <lightning-button-icon icon-name="utility:zoomout" alternative-text="Zoom out" variant="bare"
+                    onclick={handleZoomOut}></lightning-button-icon>
+                <lightning-button-icon icon-name="utility:rotate" alternative-text="Rotate" variant="bare"
+                    onclick={handleRotate}></lightning-button-icon>
+            </lightning-button-group>
+        </div>
+    </div>
+</template>
