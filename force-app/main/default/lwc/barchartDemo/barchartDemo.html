@@ -1,0 +1,24 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-10-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+  <div
+    class="slds-p-around_small slds-grid slds-grid--vertical-align-center slds-grid--align-center"
+  >
+    <canvas class="barChart" lwc:dom="manual"></canvas>
+    <div
+      if:false={isChartJsInitialized}
+      class="slds-col--padded slds-size--1-of-1"
+    >
+      <lightning-spinner
+        alternative-text="Loading"
+        size="medium"
+        variant="base"
+      ></lightning-spinner>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,14 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-10-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+  <lightning-card title="Open Opportunities" icon-name="utility:chart">
+    <template if:true={chartConfiguration}>
+      <c-barchart-demo chart-config={chartConfiguration}></c-barchart-demo>
+    </template>
+  </lightning-card>
+</template>

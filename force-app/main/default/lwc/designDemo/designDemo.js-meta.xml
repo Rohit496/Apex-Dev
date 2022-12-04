@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__HomePage,lightning__AppPage">
+            <property name="fullName" type="String" label="Enter your full name here" default="Rohit Kumar"></property>
+            <property name="textColor" type="String" label="Enter your text name here" default="red"></property>
+            <property name="bgroundColor" type="String" label="Enter your background name here" default="blue"></property>
+            <property name="imgUrl" type="String" label="Enter your image URL here" default="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"></property>
+            <property name="imgHeight" type="String" label="Enter your img height  here"></property>
+            <property name="imgWidth" type="String" label="Enter your img width  here"></property>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

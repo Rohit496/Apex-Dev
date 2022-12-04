@@ -1,0 +1,9 @@
+<template>
+    <template if:true={allData}>
+        <template for:each={allData} for:item="res">
+            <p key={res.result.fields.Id}>Title:{res.result.fields.Video_Title__c.value}</p>
+            <p key={res.result.fields.Id}>Desscription:{res.result.fields.Video_Description__c.value}</p>
+            <p key={res.result.fields.Id}>URL:{res.result.fields.Video_URL__c.value}</p>
+        </template>
+    </template>
+</template>
