@@ -1,0 +1,9 @@
+.highlight {
+  color: blue;
+}
+.yellow {
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

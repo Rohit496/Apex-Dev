@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "customFont";
+  src: url("/resource/ASSETTS/ASSETTS/Sudegnakno2-LrLg.ttf") format("TrueType");
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "customFont";
+}

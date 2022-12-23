@@ -28,7 +28,8 @@
         "husky": "^7.0.4",
         "lint-staged": "^12.3.7",
         "prettier": "^2.6.0",
-        "prettier-plugin-apex": "^1.10.0"
+        "prettier-plugin-apex": "^1.10.0",
+        "salesforce-pageobjects": "^2.2.0"
     },
     "lint-staged": {
         "**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}": [
@@ -37,5 +38,8 @@
         "**/{aura,lwc}/**": [
             "eslint"
         ]
+    },
+    "dependencies": {
+        "utam": "^1.2.2"
     }
 }
